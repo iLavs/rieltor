@@ -717,8 +717,12 @@ input[type="radio"]:checked + label:before{
 	padding-bottom: 20px;
 }
 
-/*FORM*/
+/*INSTAGRAM*/
+#sb_instagram #sbi_images {
+    padding: 0 !important;
+}
 
+/*FORM*/
 .for-client .form-section {
 	background: rgba(219, 219, 219, .42);
 }
