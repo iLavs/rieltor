@@ -637,7 +637,7 @@ input[type="radio"]:checked + label:before{
 }
 
 .owl-carousel .owl-item{
-	padding: 2.812em 1.25em 1em 5.625em;
+	padding: 2.812em 1.25em 0 5.625em;
 }
 
 .owl-carousel .owl-item h3{
@@ -658,8 +658,57 @@ input[type="radio"]:checked + label:before{
 	display: inline-block;
 }
 
+.owl-pagination{
+	text-align: right;
+	padding-right: 25px;
+}
+
 .owl-pagination .owl-page{
+	position: relative;
+	margin: 0 5px;
+}
+
+.owl-pagination .owl-page,
+.owl-pagination .active:before{
+	content: "";
 	display: inline-block;
+	background: #aeaeae;
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+}
+
+.owl-pagination .active:before,
+.owl-pagination .active:after,
+.owl-pagination .active{
+	background: #fcbe25;
+}
+
+.owl-pagination .active:after{
+	content: "";
+	position: absolute;
+	top: 55%;
+	left: -5px;
+	height: 4px;
+	width: 10px;
+	-webkit-transform: translatey(-50%);
+	-ms-transform: translatey(-50%);
+	-o-transform: translatey(-50%);
+	transform: translatey(-50%);
+}
+
+.owl-pagination .active{
+	margin: 0 0 0 15px
+}
+
+.owl-pagination .active:before{
+	position: absolute;
+	left: -10px;
+	top: 0;
+}
+
+.owl-controls{
+	padding-bottom: 20px;
 }
 
 /*FORM*/
