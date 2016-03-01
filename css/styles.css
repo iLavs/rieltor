@@ -193,7 +193,10 @@ input[type="radio"]:checked + label:before{
 	color: #fff;
 }
 
-.main-nav .active,
+.main-nav .current-menu-item,
+.main-nav .current_page_item,
+.main-nav .current-menu-parent,
+.main-nav .current-menu-ancestor,
 .main-nav li:hover{
 	background: #f2b41a;
 }
@@ -228,7 +231,10 @@ input[type="radio"]:checked + label:before{
 	transform: scalex(1);
 }
  
-.main-nav .active a{
+.main-nav .current-menu-item a,
+.main-nav .current_page_item a,
+.main-nav .current-menu-parent a,
+.main-nav .current-menu-ancestor a{
 	color: #000;
 }
 /*-------------------------------------CONTENT--------------------------------------*/
@@ -902,14 +908,16 @@ input[type="radio"]:checked + label:before{
 .footer .foot-nav .sub-menu .sub-menu li{
 	position: relative;
 	margin-bottom: .65em;
-	padding-left: 18px;
+	padding-left: 16px;
 }
 
-.footer .foot-nav > ul .fa{
+.footer .foot-nav .sub-menu .sub-menu li:before{
+    content: "\f054";
 	position: absolute;
-	top: 7px;
+	top: 6px;
 	left: 0;
 	display: inline-block;
+    font-family: FontAwesome;
     font-size: 0.6em;
 }
 
@@ -920,7 +928,11 @@ input[type="radio"]:checked + label:before{
 	transition: .33s;
 }
 
-.footer .footer-top a:hover{
+.footer .footer-top a:hover,
+.foot-nav .current-menu-item,
+.foot-nav .current_page_item a,
+.foot-nav .current-menu-parent a,
+.foot-nav .current-menu-ancestor a{
 	color: #fff;
 }
 /*-----------------------------------INNER-PAGES-------------------------------------*/
