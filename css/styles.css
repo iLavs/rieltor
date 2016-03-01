@@ -60,6 +60,10 @@ button 						   { border: none; }
 	font:900 1.125em Roboto ;
 	padding: 1.05em 2.1875em 1.09em 2.1875em;
 	border-radius: 2.125em;
+
+	-webkit-transition: .15s;
+	-o-transition: .15s;
+	transition: .15s;
 }
 
 .orange{
