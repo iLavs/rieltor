@@ -6,5 +6,18 @@ $(document).ready(function() {
       paginationSpeed : 1400,
       rewindSpeed: 2000,
       pagination: true,
-      singleItem:true});
+      singleItem:true
+    });
+
+  $(function() {
+    $('a.anchor-link').bind('click', function(event) {
+    var $anchor = $(this);
+     $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top + 45
+      }, 1250);
+      event.preventDefault();
+    });
+
+  });
+
 });

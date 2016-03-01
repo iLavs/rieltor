@@ -1,3 +1,9 @@
+@media all and (max-width: 1660px){
+	.form-section .radio-field{
+		width: 90%;
+	}
+}
+
 @media all and (max-width: 1480px){
 	body,a{
 		font-size: 15px;
@@ -38,6 +44,7 @@
 	.owl-carousel:before{
 		width: 83px;
 	}
+
 }
 
 @media all and (max-width: 1380px){
@@ -73,6 +80,10 @@
 
 	.intro-banner .excerpt{
 		padding-left: 4em;
+	}
+
+	.form-section .radio-field{
+		width: 80%;
 	}
 }
 

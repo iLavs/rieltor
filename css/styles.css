@@ -246,12 +246,24 @@ input[type="radio"]:checked + label:before{
 
 .anchor-link{
 	position: absolute;
-	bottom: 0;
+	bottom: 21px;
 	left: 50%;
 	display: block;
 	width: 12px;
-	height: 13px;
+	height: 20px;
 	margin: 0 0 0 -6px;
+	z-index: 10;
+
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.anchor-link:hover{
+	-webkit-transform: translateY(3px);
+	-ms-transform: translateY(3px);
+	-o-transform: translateY(3px);
+	transform: translateY(3px);
 }
 /*-------------------------------------CONTENT--------------------------------------*/
 .home .content > section,
@@ -521,6 +533,11 @@ input[type="radio"]:checked + label:before{
 	margin: 0 20px;
 }
 
+.helps .anchor-link,
+.find-home .anchor-link{
+	background: url(../img/arr-or.png) no-repeat;
+	bottom: -22px;
+}
 
 /*FIND-HOME*/
 .home .content .find-home{
@@ -556,7 +573,6 @@ input[type="radio"]:checked + label:before{
 	display: block;
 	width: 100%;
 }
-
 
 /*TWIT SECTION*/
 .home .twit-section{
@@ -597,6 +613,11 @@ input[type="radio"]:checked + label:before{
 	text-transform: uppercase;
 }
 
+.twit-section .anchor-link{
+	background: url(../img/arr.png) no-repeat;
+	bottom: -22px;
+}
+
 /*FOR CLIENT*/
 .home .content .for-client{
 	padding: 0;
@@ -629,6 +650,11 @@ input[type="radio"]:checked + label:before{
 .home .for-client > section h2:after{
 	width: 150px;
 	background-position: center right;
+}
+
+.for-client .anchor-link{
+	background:url(../img/arr-or.png) no-repeat;
+	bottom: 18px;
 }
 
 /*SLIDER*/
@@ -774,7 +800,7 @@ input[type="radio"]:checked + label:before{
 	width: 70%;
 	background: #fcbe25;
 	border-radius: 45px;
-	padding: 0 2em;
+	padding: 0 1.6em;
 	margin: 0 0 1.5em;
 	overflow: hidden;
 }
@@ -798,7 +824,11 @@ input[type="radio"]:checked + label:before{
 }
 
 .form-section .radio-field li{
-	padding: 0 0 0 1.56em;
+	padding: 0 0 0 1.16em;
+}
+
+.form-section .radio-field li label{
+	font-size: 0.8em;
 }
 
 .form-section ::-webkit-input-placeholder {color:#000; font:500 1em Roboto;}
@@ -851,11 +881,19 @@ input[type="radio"]:checked + label:before{
 	text-transform: uppercase;
 }
 
+.footer .anchor-link{
+	background: url(../img/arr-top.png) no-repeat;
+	top: -12px;
+	-webkit-transform: translateX(3px);
+	-ms-transform: translateX(3px);
+	-o-transform: translateX(3px);
+	transform: translateX(3px);
+}
 
 /*-------------------------------------FOOTER---------------------------------------*/
 .footer{
+	position: relative;
 	background: #282f39;
-	overflow: hidden;
 	padding: 7.5em 0 0;
 	color: #69778a;
 }
