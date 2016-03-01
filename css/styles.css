@@ -533,9 +533,10 @@ input[type="radio"]:checked + label:before{
 
 
 /*TWIT SECTION*/
-.twit-section{
+.home .twit-section{
 	background: url(../img/twit-bg.png);
 	text-align: center;
+	padding-bottom: 6.751em;
 }
 
 .twit-section:before{
@@ -808,7 +809,6 @@ input[type="radio"]:checked + label:before{
 	margin-bottom: .65em;
 	padding-left: 25px;
 }
-
 
 .footer .foot-nav > ul .fa{
 	position: absolute;
