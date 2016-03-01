@@ -197,6 +197,7 @@ input[type="radio"]:checked + label:before{
 .main-nav .current_page_item,
 .main-nav .current-menu-parent,
 .main-nav .current-menu-ancestor,
+.main-nav .current-page-ancestor,
 .main-nav li:hover{
 	background: #f2b41a;
 }
@@ -222,8 +223,12 @@ input[type="radio"]:checked + label:before{
 	z-index: 100;
 }
 
-.main-nav .active:after,
-.main-nav li:hover:after{
+.main-nav li:hover:after,
+.main-nav .current-menu-item:after,
+.main-nav .current_page_item:after,
+.main-nav .current-menu-parent:after,
+.main-nav .current-menu-ancestor:after,
+.main-nav .current-page-ancestor:after{
 	width: 100%;
 	-webkit-transform: scalex(1);
 	-ms-transform: scalex(1);
@@ -234,7 +239,8 @@ input[type="radio"]:checked + label:before{
 .main-nav .current-menu-item a,
 .main-nav .current_page_item a,
 .main-nav .current-menu-parent a,
-.main-nav .current-menu-ancestor a{
+.main-nav .current-menu-ancestor a,
+.main-nav .current-page-ancestor a {
 	color: #000;
 }
 /*-------------------------------------CONTENT--------------------------------------*/
@@ -980,6 +986,9 @@ input[type="radio"]:checked + label:before{
 	display: inline-block;
     font-family: FontAwesome;
     font-size: 0.6em;
+    -webkit-transition: .33s;
+    -o-transition: .33s;
+    transition: .33s;
 }
 
 .footer .footer-top a{
@@ -990,10 +999,17 @@ input[type="radio"]:checked + label:before{
 }
 
 .footer .footer-top a:hover,
-.foot-nav .current-menu-item,
-.foot-nav .current_page_item a,
-.foot-nav .current-menu-parent a,
-.foot-nav .current-menu-ancestor a{
+.foot-nav .current-menu-item > a,
+.foot-nav .current_page_item > a,
+.foot-nav .current-menu-parent > a,
+.foot-nav .current-menu-ancestor > a,
+.foot-nav .current-page-ancestor > a,
+.footer .foot-nav .sub-menu .sub-menu li:hover:before,
+.footer .foot-nav .sub-menu .sub-menu .current-menu-item:before,
+.footer .foot-nav .sub-menu .sub-menu .current_page_item:before,
+.footer .foot-nav .sub-menu .sub-menu .current-menu-parent:hover:before,
+.footer .foot-nav .sub-menu .sub-menu .current-menu-ancestor:before,
+.footer .foot-nav .sub-menu .sub-menu .current-page-ancestor:before {
 	color: #fff;
 }
 /*-----------------------------------INNER-PAGES-------------------------------------*/
