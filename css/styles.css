@@ -734,16 +734,21 @@ input[type="radio"]:checked + label:before{
 	margin: 0 0 25px;
 }
 
-/*FORM*/
-
- .form-section {
-
 /*INSTAGRAM*/
 #sb_instagram #sbi_images {
     padding: 0 !important;
 }
+#sb_instagram #sbi_images .sbi_item {
+    padding-right: 5px !important;
+}
+#sb_instagram #sbi_images .sbi_item:last-of-type {
+    padding-right: 0 !important;
+}
 
 /*FORM*/
+.form-section {
+
+}
 .for-client .form-section {
 
 	background: rgba(219, 219, 219, .42);
