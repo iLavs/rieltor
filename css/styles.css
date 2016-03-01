@@ -685,6 +685,12 @@ input[type="radio"]:checked + label:before{
 	height: 7.5em;
 }
 
+/*REVIEWS*/
+.owl-carousel{
+	display: inline-block;
+	width: 90%;
+}
+
 /*SERVING*/
 
 .serving-list{
