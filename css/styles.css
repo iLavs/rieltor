@@ -728,6 +728,7 @@ input[type="radio"]:checked + label:before{
 	padding-bottom: 20px;
 }
 
+
 .for-client h4{
 	font: 1.625em roboto;
 	margin: 0 0 25px;
@@ -736,6 +737,15 @@ input[type="radio"]:checked + label:before{
 /*FORM*/
 
  .form-section {
+
+/*INSTAGRAM*/
+#sb_instagram #sbi_images {
+    padding: 0 !important;
+}
+
+/*FORM*/
+.for-client .form-section {
+
 	background: rgba(219, 219, 219, .42);
 }
 
