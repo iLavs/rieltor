@@ -605,6 +605,47 @@ input[type="radio"]:checked + label:before{
 	background-position: center right;
 }
 
+/*SLIDER*/
+.owl-carousel{
+	border-radius: 1.2em;
+	background: rgba(219, 219, 219, .42);
+}
+
+.owl-carousel:before{
+	content: "";
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 114px;
+	top: 0;
+	left: 0;
+	background: url(../img/bg-client.png) no-repeat center center;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	z-index: 50;
+
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.owl-carousel .owl-item{
+	padding: 2.812em 1.25em 1em 5.625em;
+	
+}
+
+.owl-carousel .owl-item h3{
+	font:1.625em roboto;
+	margin:0 0 1em;
+}
+
+.owl-carousel .owl-item blockquote footer{
+	padding-top: 1.7em;
+	font:900 1.1em roboto;
+	color: #fcbe25;
+}
+
 .for-client .form-section {
 	background: rgba(219, 219, 219, .42);
 }
@@ -686,6 +727,7 @@ input[type="radio"]:checked + label:before{
 }
 
 /*REVIEWS*/
+
 .owl-carousel{
 	display: inline-block;
 	width: 90%;

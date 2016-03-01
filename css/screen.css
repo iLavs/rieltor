@@ -30,6 +30,10 @@
 	.for-client > section {
 	    padding: 8.125em 7em 9.375em;
 	}
+
+	.owl-carousel{
+		width: 100%;
+	}
 }
 
 @media all and (max-width: 1380px){
