@@ -695,33 +695,8 @@ input[type="radio"]:checked + label:before{
 	border-radius: 50%;
 }
 
-.owl-pagination .active:before,
-.owl-pagination .active:after,
 .owl-pagination .active{
 	background: #fcbe25;
-}
-
-.owl-pagination .active:after{
-	content: "";
-	position: absolute;
-	top: 55%;
-	left: -5px;
-	height: 4px;
-	width: 10px;
-	-webkit-transform: translatey(-50%);
-	-ms-transform: translatey(-50%);
-	-o-transform: translatey(-50%);
-	transform: translatey(-50%);
-}
-
-.owl-pagination .active{
-	margin: 0 0 0 15px
-}
-
-.owl-pagination .active:before{
-	position: absolute;
-	left: -10px;
-	top: 0;
 }
 
 .owl-controls{
