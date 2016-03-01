@@ -93,7 +93,7 @@ button 						   { border: none; }
 .input-style{
 	display: inline-block;
 	width: 100%;
-	font: 600 1em roboto;
+	font: 500 1em roboto;
 	color:#000;
 	padding: 1.31em 1.56em;
 	border: none;
@@ -321,6 +321,10 @@ input[type="radio"]:checked + label:before{
 
 .intro-banner .text{
 	left: 10em;
+}
+
+.intro-banner .anchor-link{
+	background: url(../img/arr-or.png) no-repeat;
 }
 
 .intro-banner h1{
@@ -702,7 +706,6 @@ input[type="radio"]:checked + label:before{
 	padding-bottom: 20px;
 }
 
-
 .for-client h4{
 	font: 1.625em roboto;
 	margin: 0 0 25px;
@@ -720,9 +723,7 @@ input[type="radio"]:checked + label:before{
 }
 
 /*FORM*/
-.form-section {
 
-}
 .for-client .form-section {
 
 	background: rgba(219, 219, 219, .42);
