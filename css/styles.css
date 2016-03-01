@@ -638,7 +638,6 @@ input[type="radio"]:checked + label:before{
 
 .owl-carousel .owl-item{
 	padding: 2.812em 1.25em 1em 5.625em;
-	
 }
 
 .owl-carousel .owl-item h3{
@@ -651,6 +650,19 @@ input[type="radio"]:checked + label:before{
 	font:900 1.1em roboto;
 	color: #fcbe25;
 }
+
+.owl-carousel  blockquote footer:before,
+.owl-carousel  blockquote footer:after{
+	content: "-";
+	margin: 0 5px;
+	display: inline-block;
+}
+
+.owl-pagination .owl-page{
+	display: inline-block;
+}
+
+/*FORM*/
 
 .for-client .form-section {
 	background: rgba(219, 219, 219, .42);

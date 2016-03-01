@@ -7,5 +7,4 @@ $(document).ready(function() {
       rewindSpeed: 2000,
       pagination: true,
       singleItem:true});
-
 });

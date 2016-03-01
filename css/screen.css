@@ -34,6 +34,10 @@
 	.owl-carousel{
 		width: 100%;
 	}
+
+	.owl-carousel:before{
+		width: 83px;
+	}
 }
 
 @media all and (max-width: 1380px){
