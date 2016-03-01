@@ -52,5 +52,23 @@
 	.form-section .radio-field{
 		width: 80%;
 	}
+
+	.footer-top{
+		padding-right: 8em;
+		padding-left: 8em;
+	}
+
+	.intro-banner .text{
+		left: 8em;
+	}
+
+	.intro-banner .excerpt{
+		padding-left: 4em;
+	}
 }
 
+@media all and (max-width: 1280px){
+	body, a{
+		font-size: 12px;
+	}
+}

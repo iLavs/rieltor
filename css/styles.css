@@ -87,6 +87,7 @@ button 						   { border: none; }
 .col-5{
 	width: 50%;
 	float: left;
+	overflow: hidden;
 }
 
 .input-style{
