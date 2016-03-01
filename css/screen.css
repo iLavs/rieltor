@@ -1,0 +1,56 @@
+@media all and (max-width: 1480px){
+	body,a{
+		font-size: 15px;
+	}
+
+	.header{
+		height: 95px;
+	}
+
+	.logo{
+		width: 170px;
+		height: 69px;
+	}
+
+	.intro-banner{
+		height: 900px;
+	}
+
+	.intro-banner:after{
+		height: 680px;
+		width: 380px;
+	}
+
+	.intro-banner .excerpt blockquote{
+		width: 60%;
+		-webkit-background-size: 65px;
+		background-size: 65px;
+	}
+
+	.for-client > section {
+	    padding: 8.125em 7em 9.375em;
+	}
+}
+
+@media all and (max-width: 1380px){
+	body, a{
+		font-size: 14px;
+	}
+
+	.header{
+		height: 88px;
+	}
+
+	.intro-banner{
+		height: 750px;
+	}
+
+	.intro-banner:after{
+		height: 580px;
+	}
+
+	.form-section .radio-field{
+		width: 80%;
+	}
+}
+
