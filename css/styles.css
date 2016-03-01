@@ -763,20 +763,59 @@ input[type="radio"]:checked + label:before{
 	margin: 0 1.8em 0 0;
 }
 
-.footer h4{
-	font: 1.25em Roboto;
-	color: #fff;
-	margin: 0 0 1.25em;
-} 
+.footer-header {
+    position: relative;
+}
 
-.footer h4 + ul > li{
+.footer-header:before,
+.footer-header:after {
+    content: '';
+    position: absolute;
+    top: 13px;
+    right: 0;
+}
+
+.footer-header:before {
+    width: 100%;
+    height: 1px;
+    background: #46505F;
+}
+
+.footer-header:after {
+    top: 8px;
+    width: 9px;
+    height: 9px;
+    border: 1px solid #46505F;
+    border-radius: 50%;
+    background: #282f39;
+}
+
+.footer h4 {
+    font: 1.25em Roboto;
+    color: #fff;
+    margin: 0 0 1.25em;
+}
+
+.footer .contacts h4 {
+    padding-left: 1em;
+}
+
+.footer-header h4{
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    background: #282f39;
+    padding-right: 0.5em;
+}
+
+.footer .footer-header + ul > li{
 	position: relative;
 	padding: 0 0 0 40px;
 }
 
-.footer h4 + ul .fa{
+.footer .footer-header + ul .fa{
 	position: absolute;
-	top: 5px;
+	top: 4px;
 	left: 0;
 	width: 25px;
 	text-align: center;
@@ -794,6 +833,10 @@ input[type="radio"]:checked + label:before{
 	font-size: 1.2em;
 }
 
+.footer .fa.fa-envelope {
+    font-size: 1em;
+}
+
 .footer .copy{
 	clear: both;
 }
@@ -804,23 +847,28 @@ input[type="radio"]:checked + label:before{
 	margin: 0 0 .6em;
 }
 
-.footer .foot-nav h5,
 .footer .foot-nav > ul > li > a{
+    display: none;
+}
+
+.footer .foot-nav > ul > li > .sub-menu > li > a{
+    display: inline-block;
 	font:700 1em roboto;
 	padding-bottom: 1em;
 }
 
-.footer .foot-nav > ul > li li{
+.footer .foot-nav .sub-menu .sub-menu li{
 	position: relative;
 	margin-bottom: .65em;
-	padding-left: 25px;
+	padding-left: 18px;
 }
 
 .footer .foot-nav > ul .fa{
 	position: absolute;
-	top: 4px;
+	top: 7px;
 	left: 0;
 	display: inline-block;
+    font-size: 0.6em;
 }
 
 .footer .footer-top a{
