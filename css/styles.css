@@ -1081,7 +1081,7 @@ input[type="radio"]:checked + label:before{
 
 .content-wrap .content{
 	width: calc(100% - 502px);
-	border-right: 2px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
 }
 
 .content-wrap .content{
