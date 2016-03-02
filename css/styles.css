@@ -768,8 +768,9 @@ input[type="radio"]:checked + label:before{
 	background: rgba(219, 219, 219, .42);
 }
 
-.form-section form > p{
-	font:italic 1.125em/1.5 Roboto;
+.form-section form > p,
+.form-section .preform-text p{
+	font: italic 1.125em/1.5 Roboto;
 	margin: 0 0 1em;
 }
 
