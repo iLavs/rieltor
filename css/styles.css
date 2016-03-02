@@ -1117,12 +1117,12 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 	background-size: cover;
 }
 
-.blog .header .call-link,
+.page-template-page-blog .header .call-link,
 .single .header .call-link{
 	display: none;
 }
 
-.blog .header .headeing-section,
+.page-template-page-blog .header .headeing-section,
 .single .header .headeing-section{
 	position: absolute;
 	left: 0;
@@ -1132,7 +1132,7 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 	text-align: center;
 }
 
-.blog .header h1,
+.page-template-page-blog .header h1,
 .single .header h1{
 	font:900 6.125em/1 Raleway;
 	color: #fff;
@@ -1158,27 +1158,27 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 	display: none;
 }
 
-.blog .content,
+.page-template-page-blog .content,
 .single .content{
 	padding: 0 3.75em;
 }
 
-.blog .content,
+.page-template-page-blog .content,
 .single .content,
 .sidebar{
 	padding-top: 6.875em;
 }
 
-.blog article h2{
+.page-template-page-blog article h2{
 	margin: 0 0 18px;
 }
 
-.blog article h2 a{
+.page-template-page-blog article h2 a{
 	font: 2.1875em Roboto;
 	color: #000;
 }
 
-.blog article header{
+.page-template-page-blog article header{
 	margin: 0 0 2.625em;
 }
 
