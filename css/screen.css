@@ -354,3 +354,34 @@
  		padding: 0 2.625em;
  	}
 }
+
+@media all and (max-width: 767px){
+	.intro-banner .excerpt {
+	    padding-left: 2em;
+	}
+
+	.intro-banner .buttons span{
+		display: none;
+	}
+
+	.intro-banner .excerpt blockquote{
+		width: 100%;
+	}
+
+	.wave, .wave:before, .wave:after{
+		z-index: 10;
+	}
+
+	.clients-logo ul{
+		overflow: hidden;
+	}
+
+	.clients-logo li{
+		width: 25%;
+	}
+
+	.intro-banner .excerpt{
+		width: 100%;
+		z-index: 10;
+	}
+}
