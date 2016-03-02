@@ -871,17 +871,6 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 	text-align: center;
 }
 
-.serving:after{
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	display: block;
-	width: 100%;
-	height: 44px;
-	background: url(../img/wave3.png) no-repeat center top;
-}
-
 .serving-list li{
 	float: left;
 	width: 33.33%;
@@ -913,6 +902,17 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 	background: #282f39;
 	padding: 7.5em 0 0;
 	color: #69778a;
+}
+
+.footer:after{
+	content: "";
+    position: absolute;
+    top: -44px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 44px;
+    background: url(../img/wave3.png) no-repeat center top;
 }
 
 .footer-top{
