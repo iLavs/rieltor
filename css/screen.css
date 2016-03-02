@@ -45,6 +45,19 @@
 		width: 83px;
 	}
 
+	.content-wrap .content{
+		width: calc(100% - 400px);
+	}
+
+	.content-wrap .sidebar{
+		width: 400px;
+	}
+
+	.post-blockquote p:before,
+	.post-blockquote p:after{
+		width: 40px;
+	}
+
 }
 
 @media all and (max-width: 1380px){
@@ -85,6 +98,12 @@
 	.form-section .radio-field{
 		width: 80%;
 	}
+
+	.post-blockquote p:before,
+	.post-blockquote p:after{
+		width: 35px;
+	}
+
 }
 
 @media all and (max-width: 1280px){
