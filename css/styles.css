@@ -108,11 +108,13 @@ input[type="radio"]{
 	display: none;
 }
 
-input[type="radio"] + label{
+input[type="radio"] + label,
+input[type="radio"] + .wpcf7-list-item-label{
 	cursor: pointer;
 }
 
-input[type="radio"] + label:before{
+input[type="radio"] + label:before,
+input[type="radio"] + .wpcf7-list-item-label:before{
 	content: "";
 	display: inline-block;
 	width: 15px;
@@ -123,7 +125,8 @@ input[type="radio"] + label:before{
 	cursor: pointer;
 }
 
-input[type="radio"]:checked + label:before{
+input[type="radio"]:checked + label:before,
+input[type="radio"]:checked + .wpcf7-list-item-label:before{
 	background: url(../img/radio.png) no-repeat;
 }
  
@@ -791,6 +794,8 @@ input[type="radio"]:checked + label:before{
 }
 
 .form-section .btn{
+    border: none;
+    box-shadow: none;
 	color: #fff;
 	text-transform: uppercase;
 	padding-right: 3.375em;
@@ -826,17 +831,19 @@ input[type="radio"]:checked + label:before{
 	padding: 1.7em 0 1.6em;
 }
 
-.form-section .radio-field p{
+.form-section .radio-field .client-p{
 	height: 100%;
 	padding-right: 1em;
 	border-right: 1px solid #fdcd57;
 }
 
-.form-section .radio-field li{
+.form-section .radio-field li,
+.form-section .radio-field span.wpcf7-list-item {
 	padding: 0 0 0 1.16em;
+    margin: 0;
 }
 
-.form-section .radio-field li label{
+.form-section .radio-field label{
 	font-size: 0.8em;
 }
 
