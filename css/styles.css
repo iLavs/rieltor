@@ -1187,25 +1187,25 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 	border-bottom: 1px solid #e1e1e1;
 }
 
-.post .labels-list {
+header .labels-list {
 	overflow: hidden;
 }
-.post .labels-list > li{
+header .labels-list > li{
 	float: left;
 }
 
-.post .labels-list a{
+header .labels-list a{
 	font: 500 0.875em roboto;
 	text-transform: uppercase;
 	color: #fff;
 	padding: 2px 10px;
 }
 
-.post .labels-list .new-label{
+header .labels-list .new-label{
 	background: #ff4343;
 }
 
-.post .labels-list .category-label{
+header .labels-list .category-label{
 	background: #fcbe25;
 }
 
@@ -1664,4 +1664,65 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 	background-position: -5px -71px;
 	width: 16px;
 	height: 17px;
+}
+
+/*SINGLE*/
+.single article h1{
+	font:400 2.1875em roboto;
+	margin: 0 0 1.15em;
+}
+
+.single article header{
+	margin: 0 0 3em;
+}
+
+.single article p{
+	margin: 0 0 1.75em;
+}
+
+.single article q{
+	display: block;
+	width: 70%;
+}
+
+.single article > b{
+	display: block;
+	font:700 1.125em roboto;
+	margin: 0 0 1.65em;
+}
+
+.single article img{
+	margin: 0 2.5em 1.8em 0;
+}
+
+.single article > section ul{
+	padding: 0 0 1.65em  2.5em ;
+	overflow: hidden;
+}
+
+.single article > section ul li{
+	position: relative;
+	margin: 0 0 1.25em;
+}
+
+.single article > section ul li:before{
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: -20px;
+	width: 7px;
+	height: 7px;
+	background: #fcbe25;
+	border-radius: 50%;
+}
+
+.single .video-wrap{
+	width: 100%;
+	height: 475px;
+	overflow: hidden;
+}
+
+.single .video-wrap img{
+	display: block;
+	width: 100%;
 }
