@@ -2,6 +2,10 @@
 	.form-section .radio-field{
 		width: 75%;
 	}
+
+	.for-client > section{
+		padding: 8.125em 8em 9.375em;
+	}
 }
 
 @media all and (max-width: 1480px){
@@ -56,6 +60,10 @@
 	.post-blockquote p:before,
 	.post-blockquote p:after{
 		width: 40px;
+	}
+
+	.for-client > section{
+		padding: 8.125em  8em 9.375em;
 	}
 
 }
