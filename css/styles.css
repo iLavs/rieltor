@@ -152,6 +152,7 @@ input[type="radio"]:checked + label:before{
 	color: #f2b41a;
 	margin-top: 1.4375em;
 	margin-left: 5.625em;
+	min-height: 50px;
 }
 
 .call-link span{
@@ -1070,3 +1071,187 @@ input[type="radio"]:checked + label:before{
 	color: #fff;
 }
 /*-----------------------------------INNER-PAGES-------------------------------------*/
+
+.blog{
+
+}
+
+
+.sidebar{
+	width: 500px;
+	padding: 7.5em 3.75em 4em;
+}
+
+.sidebar > section{
+	margin: 0 0 3.75em;
+}
+
+.sidebar h4{
+	position: relative;
+	font:300 2.375em roboto;
+	padding: 0 0 10px;
+	margin: 0 0 0.63em
+}
+
+.sidebar h4:after{
+	position: absolute;
+	content: "";
+	display: inline-block;
+	bottom: 0;
+	left: 0;
+	height: 4px;
+	width: 50px;
+	background: #fcbe25;
+}
+
+
+.sidebar a{
+	display: inline-block;
+}
+
+.sidebar .about-me{
+	border-top:5px solid #fcbe25;
+	background: #f6f6f6;
+	padding: 3.125em 2em 3.75em;
+	text-align: center; 
+	color: #585858;
+}
+
+.sidebar .about-me h4{
+	padding-bottom: 0.526em;
+}
+
+.sidebar .about-me h4:after{
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.sidebar .about-me p{
+	margin: 0 0 1.56em;
+}
+
+.sidebar .about-me .btn{
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.sidebar .about-me .thumb{
+	display: block;
+	width: 155px;
+	height: 155px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 0 auto 1em;
+}
+
+.sidebar figcaption{
+	display: inline-block;
+	font:500 1.375em Roboto;
+	color: #585858;
+	margin: 0 0 1.36em;
+}
+
+.recent-posts-list li{
+	overflow: hidden;
+	margin: 0 0 2em;
+}
+
+.recent-posts-list .thumb{
+	float: left; 
+	margin-right: 1.8em;
+}
+
+.recent-posts-list .thumb+section{
+	overflow: hidden;
+}
+
+.recent-posts-list a{
+	display: inline-block;
+	font:700 .95em/1.5 Roboto;
+	color: #000;
+	text-transform: uppercase;
+	margin: 0 0 1em;
+
+	 -webkit-transition: .3s;
+	 -o-transition: .3s;
+	 transition: .3s;
+}
+
+.sidebar a:hover{
+	color: #fcbe25;
+}
+
+.sidebar .date{
+	display: block;
+	font: 300 0.89em Roboto;
+	color: #777;
+	letter-spacing: 4px;
+}
+
+.sidebar .categories li{
+	margin: 0 0 .9em;
+	padding-left: 20px;
+	background: url(../img/chevron.png) no-repeat left center;
+}
+
+.sidebar .featured-posts li{
+	padding: 1em 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.sidebar .featured-posts a{
+	margin-bottom: .43em; 
+}
+
+.sidebar .tags-list li{
+	display: inline-block;
+	margin: 0 6px 9px 0;
+}
+
+.tags-list a{
+	font: 0.875em roboto;
+	padding: 5px 15px 7px;
+	background: #f8f8f8;
+	border: 1px solid #e1e1e1;
+}
+
+.tags-list a:hover{
+	background: #fcbe25;
+	color: #fff;
+	border: 1px solid #fcbe25;
+}
+
+.subscriber header{
+	font: 500 1.1875em Roboto;
+	padding: 1.315em 2.1em 1.2em;
+	background: #fcbe25;
+	color: #000;
+	text-align: center;
+}
+
+.subscriber {
+	background: #f8f8f8;
+	text-align: center;
+}
+
+.subscriber header strong{
+	display: block;
+	font: 700 1.578em roboto ;
+}
+
+.subscriber header + section{
+	padding: 30px 20px;
+	border: 1px solid #e1e1e1;
+}
+
+.subscriber p{
+	line-height: 2;
+}
+
+.subscriber .note{
+	font: 12px roboto;
+	color: #000;
+}

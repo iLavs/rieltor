@@ -37,9 +37,9 @@
 	    padding: 8.125em 7em 9.375em;
 	}
 
-	.owl-carousel{
+	/*.owl-carousel{
 		width: 100%;
-	}
+	}*/
 
 	.owl-carousel:before{
 		width: 83px;
