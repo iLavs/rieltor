@@ -104,6 +104,10 @@
 		width: 35px;
 	}
 
+	.post p{
+		margin: 0 0 25px;
+	}
+
 }
 
 @media all and (max-width: 1280px){

@@ -1213,6 +1213,18 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 	width: 100%;
 }
 
+.post .media.empty{
+	width: auto;
+	margin: 0 12px 15px 0;
+}
+
+.post .media.empty .date-label{
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+
 .post .date-label{
 	position: absolute;
 	top: 12px;
@@ -1224,6 +1236,7 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 	color:#fff;
 	text-transform: uppercase;
 }
+
 .post .date-label span{
 	display: block;
 	font: 900 2.42em Roboto;
@@ -1251,6 +1264,7 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 }
 
 .post-footer-info{
+	line-height: 4;
 	text-align: right;
 	overflow: hidden;
 }
@@ -1262,6 +1276,7 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 
 .post blockquote{
 	position: relative;
+	max-width: 480px;
 	padding: 1.2em 2em 1.25em;
 	overflow: hidden;
 	margin: 0 0 2.25em;
@@ -1333,6 +1348,53 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 	margin: 0 10px;
 	color:#fcbe25;
 }
+
+/*pagination*/
+
+.pagination li{
+	display: inline-block;
+	margin: 0 11px;
+}
+
+.pagination li:first-child a,
+.pagination li:last-child a{
+	font-size:  0.625em;
+	text-transform: uppercase;
+}
+
+.pagination li:first-child a:before,
+.pagination li:last-child a:after{
+	content: "";
+	display: inline-block;
+	width: 21px;
+	height: 10px;
+	background-image: url(../img/arrows.png);
+	background-position: 0 -3px;
+	vertical-align: middle;
+	margin: -2px 10px 0;
+}
+
+.pagination li:last-child a:after{
+	background-position: -31px -3px;
+}
+
+.pagination a{
+	font:400 1.125em Roboto;
+	padding: 0  0.625em;
+	color: #282f39;
+	vertical-align: middle;
+}
+
+.pagination a:hover{
+	color: #fcbe25;
+}
+
+.pagination .active a{
+	border-left: 1px solid #fcbe25;
+	border-right: 1px solid #fcbe25;
+	color: #fcbe25;
+}
+
 
 /*SIDEBAR*/
 
