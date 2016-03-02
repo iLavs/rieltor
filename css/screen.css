@@ -13,7 +13,7 @@
 		font-size: 15px;
 	}
 
-	.header{
+	.header .navbar{
 		height: 95px;
 	}
 
@@ -73,7 +73,7 @@
 		font-size: 14px;
 	}
 
-	.header{
+	.header .navbar{
 		height: 88px;
 	}
 
@@ -122,4 +122,235 @@
 	body, a{
 		font-size: 12px;
 	}
+
+	.logo {
+	    width: 100px;
+	    height: 60px;
+	}
+
+	.header .navbar{
+		height: 78px;
+	}
+}
+
+@media all and (max-width: 1150px){
+	.intro-banner{
+		height: 700px;
+	}
+
+	.intro-banner .excerpt blockquote{
+		width: 72%;
+	}
+
+	.intro-banner .text{
+		position: absolute;
+		top: auto;
+		bottom: 240px;
+		left: 35px;
+		-webkit-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
+
+	.intro-banner:after{
+		height: 520px;
+		right: 0;
+		width: 260px;
+	}
+	
+	.helps .card-list{
+		min-width: 90%;
+	}
+
+	.call-link{
+		display: none;
+	}
+
+	.for-client > section {
+	    padding: 8.125em 5em 9.375em;
+	}
+
+	.home .content h2+p{
+		font-size: 18px;
+		width: 70%;
+	}
+
+	.helps h3+p{
+		font-size: 14px;
+	}
+
+	.more-link{
+		font-size: 16px;
+	}
+
+	.twit-section q{
+		width: 60%;
+		font-size: 28px;
+	}
+
+	.twit-btn{
+		font-size: 16px;
+	}
+
+	.footer-top, .footer-bottom,
+	.footer-top, .footer-top{
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+}
+
+@media all and (max-width: 1000px){
+	
+	.intro-banner h1{
+		font-size: 32px;
+	}
+
+	.intro-banner h1 strong{
+		font-size: 55px;
+	}
+
+	.for-client .col-5{
+		width: 100%;
+	}
+
+	.home .for-client > section h2{
+		text-align: center;
+	}
+
+	.home .for-client > section h2:after{
+		display: none;
+	}
+
+	.owl-carousel .owl-item h3{
+		font-size: 28px;
+	}
+
+	.owl-carousel .owl-item blockquote p{
+		font-size: 18px;
+	}
+
+	.owl-carousel .owl-item blockquote footer{
+		font-size: 18px;
+	}
+
+	.insta h3{
+		font:300 32px roboto;
+		text-align: center;
+	}	
+
+	.form-section form > p, .form-section .preform-text p{
+		font-size: 19px;
+	}
+
+	.form-section .radio-field .client-p,
+	input[type="radio"] + label, input[type="radio"] + .wpcf7-list-item-label{
+		font-size: 18px;
+	}
+
+	input[type="radio"] + label:before, input[type="radio"] + .wpcf7-list-item-label:before{
+		margin-right: 15px;
+	}
+
+	.form-section .radio-field{
+		width: 70%;
+	}
+
+	.input-style{
+		font-size: 16px;
+	}
+
+	.form-section fieldset ul li{
+		margin: 0 0 15px;
+	}
+
+	.form-section .btn{
+		font-size: 18px;
+	}
+
+	.serving-list h3 a{
+		font-size: 22px;
+	}
+
+	.footer .footer-top a,
+	.footer .footer-header + ul > li,
+	.footer .foot-nav > ul > li > .sub-menu > li > a{
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	.footer .contact-list .location{
+		margin: 0;
+	}
+
+	.footer .logo + p{
+		font-size: 18px;
+	}
+
+	.footer-header h4{
+		font-size: 22px;
+	}
+
+	.footer .foot-nav .sub-menu .sub-menu li{
+		margin: 0 0 16px;
+	}
+
+	.footer .col-5 > .contacts{
+		padding: 0 0 0 6.25em;
+	}
+
+	.footer .foot-nav > ul > li > .sub-menu > li > a{
+		font-weight: 700;
+	}
+
+	.footer-top > .col-5{
+		width: 100%;
+		margin: 0 0 70px;
+	}
+}
+
+@media all and (max-width: 900px){
+	.intro-banner .buttons{
+		width: 330px;
+		text-align: center;
+	}
+
+	.intro-banner .excerpt{
+		height: 230px;
+	}
+
+	.intro-banner .btn,
+	.intro-banner .buttons span{
+		display: block;
+		margin: 0 0 16px;
+		font-size: 18px;
+		padding: 16px;
+	}
+
+	.intro-banner .buttons span{
+		font-size: 22px;
+		padding: 0;
+	}
+
+	.intro-banner blockquote footer{
+		padding-top: 15px;
+	}
+
+	.home .content h2:before, .home .content h2:after{
+		display: none;
+	}
+}
+
+@media all and (max-width: 800px){
+	.home .content h2+p{
+		width: 90%;
+	}
+
+	.helps .card-list{
+		width: 100%;
+	}
+
+ 	.helps .card-list li{
+ 		padding: 0 2.625em;
+ 	}
 }
