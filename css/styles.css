@@ -1135,7 +1135,7 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 }
 
 .page-template-page-blog .header,
-.page .header,
+.page:not(.home) .header,
 .error404 .header,
 .singular .header,
 .single .header,
@@ -1148,7 +1148,7 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 }
 
 .page-template-page-blog .header .call-link,
-.page .header .call-link,
+.page:not(.home) .header .call-link,
 .error404 .header .call-link,
 .singular .header .call-link,
 .single .header .call-link,
@@ -1157,7 +1157,7 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 }
 
 .page-template-page-blog .header .headeing-section,
-.page .header .headeing-section,
+.page:not(.home) .header .headeing-section,
 .error404 .header .headeing-section,
 .singular .header .headeing-section,
 .single .header .headeing-section,
@@ -1171,7 +1171,7 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 }
 
 .page-template-page-blog .header h1,
-.page .header h1,
+.page:not(.home) .header h1,
 .error404 .header h1,
 .singular .header h1,
 .single .header h1,
@@ -1202,7 +1202,7 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 }
 
 .page-template-page-blog .content,
-.page .content,
+.page:not(.home) .content,
 .error404 .content,
 .singular .content,
 .single .content,
@@ -1211,7 +1211,7 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 }
 
 .page-template-page-blog .content,
-.page .content,
+.page:not(.home) .content,
 .error404 .content,
 .singular .content,
 .single .content,
@@ -1490,7 +1490,9 @@ header .labels-list .category-label{
 	display: inline-block;
 }
 
-.sidebar .about-me{
+.sidebar .about-me,
+.sidebar .widget_text:first-child,
+.sidebar #text-2{
 	border-top:5px solid #fcbe25;
 	background: #f6f6f6;
 	padding: 3.125em 2em 3.75em;
@@ -1498,11 +1500,15 @@ header .labels-list .category-label{
 	color: #585858;
 }
 
-.sidebar .about-me h4{
+.sidebar .about-me h4,
+.sidebar .widget_text:first-child h4,
+.sidebar #text-2 h4{
 	padding-bottom: 0.526em;
 }
 
-.sidebar .about-me h4:after{
+.sidebar .about-me h4:after,
+.sidebar .widget_text:first-child h4:after,
+.sidebar #text-2 h4:after{
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
@@ -1510,16 +1516,22 @@ header .labels-list .category-label{
 	transform: translateX(-50%);
 }
 
-.sidebar .about-me p{
+.sidebar .about-me p,
+.sidebar .widget_text:first-child p,
+.sidebar #text-2 p{
 	margin: 0 0 1.56em;
 }
 
-.sidebar .about-me .btn{
+.sidebar .about-me .btn,
+.sidebar .widget_text:first-child .btn,
+.sidebar #text-2 .btn{
 	text-transform: uppercase;
 	color: #fff;
 }
 
-.sidebar .about-me .thumb{
+.sidebar .about-me .thumb,
+.sidebar .widget_text:first-child .thumb,
+.sidebar #text-2 .thumb{
 	display: block;
 	width: 155px;
 	height: 155px;
