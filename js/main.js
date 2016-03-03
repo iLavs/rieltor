@@ -38,12 +38,12 @@ $(document).ready(function() {
   }
 
   $('.burger').click(function(event) {
-      $('.main-nav, .backdrop').toggleClass('active');
+      $('.main-nav, .backdrop, .burger').toggleClass('active');
   });
 
 
   $('.backdrop').click(function(event) {
-      $('.main-nav, .backdrop').toggleClass('active');
+      $('.main-nav, .backdrop, .burger').toggleClass('active');
   });
 
   $('.owl-carousel').owlCarousel({

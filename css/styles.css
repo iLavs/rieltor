@@ -179,6 +179,17 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 	cursor: pointer;
 	-webkit-background-size: 100%;
 	background-size: 100%;
+
+	-webkit-transition: .85s ease-in;
+	-o-transition: .85s ease-in;
+	transition: .85s ease-in;
+}
+
+.burger.active{
+	background: url(../img/burger-grey.png) no-repeat;
+
+	-webkit-background-size: 100%;
+	background-size: 100%;
 }
 
 .call-link{

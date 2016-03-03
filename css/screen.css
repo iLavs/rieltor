@@ -674,7 +674,7 @@
 	    display: inline-block;
 	    vertical-align: top;
 	    float: none;
-	    margin: 0 0 60px;
+	    margin: 0 0 40px;
 	}
 
 	.foot-nav > ul > li:last-child{
@@ -781,6 +781,10 @@
 	.single .video-wrap{
 		height: 20em;
 		margin: 0 0 20px;
+	}
+
+	.footer-top > .col-5 {
+	    margin: 0 0 32px;
 	}
 }
 
