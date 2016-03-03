@@ -1,8 +1,8 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%;}
-body                            { min-width: 1200px; padding:0; margin:0; font:16px roboto; line-height: 1.5; background: #fff;}
-div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea,header, nav, section, figure, article, aside, footer, blockquote {
+body                            { /*min-width: 1200px;*/ padding:0; margin:0; font:16px roboto; line-height: 1.5; background: #fff;}
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea,header, nav, section, q, figure, article, aside, footer, blockquote {
 	padding:0;
 	margin:0;
 	outline:none;
@@ -153,6 +153,16 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 	padding: 0 45px;
 	z-index: 10;
 	border-bottom: 1px solid rgba(255,255,255, .15);
+}
+
+.burger{
+	float: right;
+	display: none;
+	width: 69px;
+	height: 69px;
+	background: url(../img/burger.png);
+	margin-top: 5px;
+	cursor: pointer;
 }
 
 .call-link{

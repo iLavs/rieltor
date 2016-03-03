@@ -33,6 +33,10 @@ $(document).ready(function() {
         equalheight('.content-wrap .content, .content-wrap .sidebar');
     });
 
+  $('.burger').click(function(event) {
+      $('.main-nav').toggleClass('active');
+  });
+
   $('.owl-carousel').owlCarousel({
       autoPlay: true,
       navigation : false, // Show next and prev buttons
