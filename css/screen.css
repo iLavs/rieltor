@@ -232,7 +232,8 @@
 	}
 
     .post > section p,
-    .single article > section p{
+    .single article > section p,
+    .single article section > strong{
 		font-size: 16px;
 	}
 
@@ -686,7 +687,7 @@
 	.error404 .content, 
 	.singular .content, 
 	.single .content, .archive .content{
-		padding: 0 2em;
+		padding: 6.875em 2em 0;
 	}
 }
 

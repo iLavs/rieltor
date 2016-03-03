@@ -1760,15 +1760,27 @@ header .labels-list .category-label{
 	margin: 0 0 1.75em;
 }
 
-.single article q{
+.single article blockquote{
 	display: block;
 	width: 70%;
+	padding-left: 45px;
+	background: url(../img/quote.png)  no-repeat left center;
+
+	-webkit-background-size: 35px;
+	background-size: 35px;
 }
 
-.single article > b{
+.single article blockquote p{
+	font-style: italic;
+	padding-left: 22px;
+	border-left: 3px solid #fcbe25;
+}
+
+.single article section > strong{
 	display: block;
-	font:700 1.125em roboto;
+	font:700 1.125em/1.5 roboto;
 	margin: 0 0 1.65em;
+	overflow: hidden;
 }
 
 .single article img{
