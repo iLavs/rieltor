@@ -1810,8 +1810,9 @@ header .labels-list .category-label{
 }
 
 .single article img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    margin: 0 30px 10px 0;
 }
 
 .single article img.alignleft{
