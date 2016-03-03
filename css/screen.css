@@ -131,6 +131,15 @@
 	.header .navbar{
 		height: 78px;
 	}
+
+	.content-wrap .sidebar{
+		width: 350px;
+		padding: 7.5em 2em 4em;
+	}
+
+	.content-wrap .content{
+		width: calc(100% - 352px);
+	}
 }
 
 @media all and (max-width: 1150px){
