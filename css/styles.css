@@ -1117,7 +1117,7 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 .content-wrap{
 	max-width: 1620px;
 	width: 100%;
-	margin: 0 auto;
+	margin: 0 auto 60px;
 	overflow: hidden;
 }
 
@@ -1321,6 +1321,10 @@ header .labels-list .category-label{
 .post .btn{
 	float: left;
 	color:#fff;
+}
+
+.post-footer-info{
+	float: right;
 }
 
 .post-footer-info{
@@ -1555,6 +1559,14 @@ header .labels-list .category-label{
 .recent-posts-list .thumb{
 	float: left; 
 	margin-right: 1.8em;
+	overflow: hidden;
+	width: 35%;
+	max-width: 145px;
+}
+
+.recent-posts-list .thumb img{
+	display: block;
+	width: 100%;
 }
 
 .recent-posts-list .thumb+section{

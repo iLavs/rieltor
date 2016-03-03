@@ -140,9 +140,31 @@
 	.content-wrap .content{
 		width: calc(100% - 352px);
 	}
+
+	.recent-posts-list .thumb{
+		width: 30%;
+		overflow: hidden;
+	}
+
+	header .labels-list a{
+		font-size: 12px;
+	}
+
+	.post .media.empty{
+		float: left;
+		width: auto;
+	}
 }
 
 @media all and (max-width: 1150px){
+	.content-wrap .sidebar{
+		width: 300px;
+	}
+
+	.content-wrap .content{
+		width: calc(100% - 300px);
+	}
+
 	.intro-banner{
 		height: 700px;
 	}
@@ -207,6 +229,42 @@
 	.footer-top, .footer-top{
 		padding-left: 4em;
 		padding-right: 4em;
+	}
+
+    .post > section p,
+    .single article > section p{
+		font-size: 16px;
+	}
+
+	.recent-posts-list a{
+		font-size: 11px;
+	}
+
+	.categories a{
+		font-size: 13px;
+	}
+	
+	.tags-list a{
+		font-size: 12px;
+	}
+
+	.post-blockquote p{
+		font-size: 20px;
+	}
+
+	.post-blockquote{
+		padding: 1.875em 1.5em 1.675em;
+	}
+
+	.post-blockquote p:before, .post-blockquote p:after{
+		width: 27px;
+	}
+}
+
+@media all and (max-width: 1050px){
+	.post .media{
+		float: none;
+		width: 100%;
 	}
 }
 
@@ -400,6 +458,15 @@
 	.home .content h2:before, .home .content h2:after{
 		display: none;
 	}
+
+	.content-wrap .content{
+		width: 100%;
+	}
+
+	.post .media{
+		float: left;
+		width: 45%;
+	}
 }
 
 @media all and (max-width: 800px){
@@ -589,6 +656,38 @@
 	.footer-top > .col-5:last-child{
 		margin: 0;
 	}
+
+	.pagination li{
+		margin: 0 5px;
+	}
+}
+
+@media all and (max-width: 580px){
+	.post .media{
+		width: 100%;
+	}
+
+	.post-blockquote p{
+		font-size: 18px;
+		line-height: 1.5;
+	}
+
+	.post-blockquote p:before, .post-blockquote p:after{
+	    width: 20px;
+    	height: 20px;
+	}
+
+	.post-blockquote {
+		padding-top: 3.8em;
+	}
+
+	.page-template-page-blog .content, 
+	.page:not(.home) .content, 
+	.error404 .content, 
+	.singular .content, 
+	.single .content, .archive .content{
+		padding: 0 2em;
+	}
 }
 
 @media all and (max-width: 560px){
@@ -650,6 +749,16 @@
 	}
 }
 
+@media all and (max-width: 480px){
+	.page-template-page-blog article h2 a{
+		font-size: 24px;
+	}
+
+	.post > section p, .single article > section p{
+		font-size: 14px;
+	}
+}
+
 @media all and (max-width: 440px){
 	.header .navbar{
 		padding: 0 20px; 
@@ -702,6 +811,10 @@
 	.form-section .radio-field{
 		padding: 0 15px;
 	}
+}
+
+@media all and (max-width: 400px){
+
 }
 
 @media all and (max-width: 360px){
