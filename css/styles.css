@@ -1913,3 +1913,18 @@ header .post-info li span {
 .post-footer-info span {
     color: #58595b;
 }
+
+/*404*/
+.wrap-404 {
+  	text-align: center;
+	padding:40px 0 100px;
+	color:#f2b41a;
+	font-size:35px;
+}
+
+.wrap-404 .error-404{
+	display:block;
+	font-weight:900;
+	font-size:150px;
+	line-height:1;
+}
