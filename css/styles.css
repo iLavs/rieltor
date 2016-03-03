@@ -1246,7 +1246,8 @@ header .labels-list > li{
 	float: left;
 }
 
-header .labels-list a{
+header .labels-list a,
+header .labels-list span{
 	font: 500 0.875em roboto;
 	text-transform: uppercase;
 	color: #fff;
@@ -1295,6 +1296,7 @@ header .labels-list .category-label{
 	padding: 5px 10px;
 	color:#fff;
 	text-transform: uppercase;
+    text-align: center;
 }
 
 .post .date-label span{
@@ -1551,12 +1553,16 @@ header .labels-list .category-label{
 	margin: 0 0 1.36em;
 }
 
-.recent-posts-list li{
-	overflow: hidden;
-	margin: 0 0 2em;
+.recent-posts-list li,
+.recent-posts-list.rpwe-block li {
+    overflow: hidden;
+    margin: 0 0 2em;
+    padding: 0;
+    border-bottom: none;
 }
 
-.recent-posts-list .thumb{
+.recent-posts-list .thumb,
+.recent-posts-list .rpwe-img{
 	float: left; 
 	margin-right: 1.8em;
 	overflow: hidden;
@@ -1564,16 +1570,26 @@ header .labels-list .category-label{
 	max-width: 145px;
 }
 
-.recent-posts-list .thumb img{
+.recent-posts-list .thumb img,
+.recent-posts-list .rpwe-img img{
 	display: block;
 	width: 100%;
+    border: none!important;
+    box-shadow: none!important;
+    margin: 0;
+    padding: 0!important;
 }
 
 .recent-posts-list .thumb+section{
 	overflow: hidden;
 }
 
-.recent-posts-list a{
+.recent-posts-list.rpwe-block h3 {
+    font-size: 1em!important;
+    margin-bottom: 1em !important;
+}
+
+.recent-posts-list h3 a{
 	display: inline-block;
 	font:700 .95em/1.5 Roboto;
 	color: #000;
@@ -1589,14 +1605,17 @@ header .labels-list .category-label{
 	color: #fcbe25;
 }
 
-.sidebar .date{
+.sidebar .date,
+.recent-posts-list .rpwe-time,
+.featured-posts .wpp-date{
 	display: block;
 	font: 300 0.89em Roboto;
 	color: #777;
 	letter-spacing: 3px;
 }
 
-.sidebar .categories li{
+.sidebar .categories li,
+.sidebar .widget_categories li{
 	margin: 0 0 .9em;
 	padding-left: 20px;
 	background: url(../img/chevron.png) no-repeat left center;
@@ -1611,19 +1630,22 @@ header .labels-list .category-label{
 	margin-bottom: .43em; 
 }
 
-.sidebar .tags-list li{
+.sidebar .tags-list li,
+.sidebar .tagcloud a{
 	display: inline-block;
 	margin: 0 6px 9px 0;
 }
 
-.tags-list a{
-	font: 0.875em roboto;
+.tags-list a,
+.sidebar .tagcloud a{
+	font: 0.875em roboto !important;
 	padding: 5px 15px 7px;
 	background: #f8f8f8;
 	border: 1px solid #e1e1e1;
 }
 
-.tags-list a:hover{
+.tags-list a:hover,
+.sidebar .tagcloud a:hover{
 	background: #fcbe25;
 	color: #fff;
 	border: 1px solid #fcbe25;
@@ -1788,11 +1810,31 @@ header .labels-list .category-label{
 }
 
 .single article img{
-	margin: 0 2.5em 1.8em 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.single article img.alignleft{
+    float: left;
+    margin: 0.5em 2em 1em 0;
+}
+.single article img.alignright{
+    float: right;
+    margin: 0.5em 0 1em 2em;
+}
+.single article img.aligncenter{
+    display: block;
+    margin: 0 auto 1.5em;
+    clear: both;
+}
+
+.single article iframe {
+    display: block;
+    margin: 0 auto;
 }
 
 .single article > section ul{
-	padding: 0 0 1.65em  2.5em ;
+	padding: 0 0 1.65em 2.5em ;
 	overflow: hidden;
 }
 
