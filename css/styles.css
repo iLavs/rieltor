@@ -1109,7 +1109,11 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 }
 
 .page-template-page-blog .header,
-.single .header{
+.page .header,
+.error404 .header,
+.singular .header,
+.single .header,
+.archive .header{
 	position: relative;
 	height: 380px;
 	background: url(../img/blog-bg.jpg) center center no-repeat;
@@ -1118,12 +1122,20 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 }
 
 .page-template-page-blog .header .call-link,
-.single .header .call-link{
+.page .header .call-link,
+.error404 .header .call-link,
+.singular .header .call-link,
+.single .header .call-link,
+.archive .header .call-link{
 	display: none;
 }
 
 .page-template-page-blog .header .headeing-section,
-.single .header .headeing-section{
+.page .header .headeing-section,
+.error404 .header .headeing-section,
+.singular .header .headeing-section,
+.single .header .headeing-section,
+.archive .header .headeing-section{
 	position: absolute;
 	left: 0;
 	bottom: 3.75em;
@@ -1133,7 +1145,11 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 }
 
 .page-template-page-blog .header h1,
-.single .header h1{
+.page .header h1,
+.error404 .header h1,
+.singular .header h1,
+.single .header h1,
+.archive .header h1{
 	font:900 6.125em/1 Raleway;
 	color: #fff;
 	text-transform: uppercase;
@@ -1160,12 +1176,20 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 }
 
 .page-template-page-blog .content,
-.single .content{
+.page .content,
+.error404 .content,
+.singular .content,
+.single .content,
+.archive .content{
 	padding: 0 3.75em;
 }
 
 .page-template-page-blog .content,
+.page .content,
+.error404 .content,
+.singular .content,
 .single .content,
+.archive .content,
 .sidebar{
 	padding-top: 6.875em;
 }
@@ -1754,7 +1778,12 @@ header .post-info li{
 	display: inline-block;
 }
 
-header .post-info li a{
+header .post-info li a,
+header .post-info li span {
 	color: #777;
 	font-size: 0.875em;
+}
+
+.post-footer-info span {
+    color: #58595b;
 }
