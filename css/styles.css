@@ -1286,6 +1286,8 @@ header .labels-list .category-label{
 .post .media img{
 	display: block;
 	width: 100%;
+	height: auto;
+	max-width: 480px;
 }
 
 .post .media.empty{

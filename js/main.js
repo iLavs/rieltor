@@ -39,11 +39,13 @@ $(document).ready(function() {
 
   $('.burger').click(function(event) {
       $('.main-nav, .backdrop, .burger').toggleClass('active');
+      $('body').addClass('overflow')
   });
 
 
   $('.backdrop').click(function(event) {
       $('.main-nav, .backdrop, .burger').toggleClass('active');
+      $('body').removeClass('overflow')
   });
 
   $('.owl-carousel').owlCarousel({
