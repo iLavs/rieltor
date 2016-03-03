@@ -233,7 +233,8 @@
 
     .post > section p,
     .single article > section p,
-    .single article section > strong{
+    .single article section > strong,
+    .single article > section ul li{
 		font-size: 16px;
 	}
 
@@ -468,6 +469,90 @@
 		float: left;
 		width: 45%;
 	}
+
+	.content-wrap .sidebar{
+		width: 100%;
+	}
+
+	.sidebar figcaption{
+		font-size: 27px;
+	}
+
+	.sidebar h4{
+		font-size: 38px;
+		margin: 0 0 35px;
+		text-align: center;
+		padding-bottom:20px;
+
+	}
+
+	.content-wrap .sidebar h4:after{
+		left: 50%;
+		margin: 0 0 0 -20px;
+		-webkit-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
+
+	.sidebar .about-me p, 
+	.sidebar .widget_text:first-child p, 
+	.sidebar #text-2 p{
+		font-size: 16px;
+	}
+
+	.sidebar .about-me .btn, 
+	.sidebar .widget_text:first-child .btn,
+	.sidebar #text-2 .btn{
+		margin-top: 15px;
+		font-size: 16px;
+	}
+
+	.recent-posts-list{
+		overflow: hidden;
+	}
+
+	.recent-posts-list a{
+		font-size: 13px;
+		overflow: hidden;
+		margin: 0;
+	}
+		
+	.recent-posts-list li,
+	.sidebar .featured-posts li{
+	    width: 48%;
+		padding-right: 30px;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 0 30px;
+	}
+
+	.sidebar .categories,
+	.sidebar .featured-posts{
+		overflow: hidden;
+	}
+	
+	.sidebar .categories li{
+		float: left;
+		width: 33.33%;
+	}
+
+	.tags-list{
+		text-align: center;
+	}
+	
+	.subscriber h2{
+		font-size: 20px;
+	}
+
+	.subscriber p{
+		font-size: 16px;
+	}
+
+	.subscriber .btn{
+		font-size: 16px;
+		margin: 0 0 25px;
+	}	
 }
 
 @media all and (max-width: 800px){
@@ -670,6 +755,33 @@
 	.pagination li{
 		margin: 0 5px;
 	}
+
+	.recent-posts-list li, 
+	.sidebar .featured-posts li{
+		width: 100%;
+	}
+
+	.recent-posts-list a{
+		font-size: 15px;
+		padding-top: 15px;
+	}
+
+	.sidebar .categories li{
+		width: 50%;
+	}
+
+	.categories a{
+		font-size: 14px;
+	}
+
+	.featured-posts a{
+		font-size: 14px;
+	}
+
+	.single .video-wrap{
+		height: 20em;
+		margin: 0 0 20px;
+	}
 }
 
 @media all and (max-width: 580px){
@@ -697,6 +809,31 @@
 	.singular .content, 
 	.single .content, .archive .content{
 		padding: 6.875em 2em 0;
+	}
+	
+	.sidebar .about-me h4, .sidebar .widget_text:first-child h4, .sidebar #text-2 h4{
+		font-size: 32px;
+	}	
+
+	.sidebar .about-me p, .sidebar .widget_text:first-child p, .sidebar #text-2 p{
+		font-size: 14px;
+	}
+
+	.sidebar figcaption{
+		margin: 0 0 20px;
+	}
+
+	.recent-posts-list a{
+		padding: 0;
+		font-size: 13px;
+	}
+
+	.sidebar .featured-posts li{
+		margin: 0 0 15px;
+	}
+
+	.tags-list a{
+		font-size: 13px;
 	}
 }
 
@@ -774,16 +911,36 @@
 	}
 
 	.post > section p, .single article > section p,
-	.post > section p strong, .single article > section p strong{
+	.post > section p strong, .single article > section p strong,
+	.single article > section ul li{
 		font-size: 14px;
 	}
+	
+	.content-wrap .sidebar{
+		padding-top: 0;
+	}
 
+	.sidebar .categories li{
+		width: 100%;
+	}
 
 	.pagination li:first-child a,
 	.pagination li:last-child a{
 		 width: 1px;
 		 padding: 0 2px;
 		overflow: hidden;
+	}
+
+	.subscriber header strong{
+		font-size: 1.28em;
+	}
+
+	.subscriber p{
+		font-size: 14px;
+	}
+
+	.subscriber .input-style{
+		font-size: 14px;
 	}
 }
 
@@ -839,6 +996,14 @@
 	.form-section .radio-field{
 		padding: 0 15px;
 	}
+
+	.post-info{
+		margin: 0;
+	}
+
+	.single .video-wrap {
+	    height: 15em;
+	}
 }
 
 @media all and (max-width: 400px){
@@ -866,6 +1031,10 @@
 	.page-template-page-blog article h2 a{
 		font-size: 20px;
 	}
+
+	.single .video-wrap {
+	    height: 11em;
+	}
 }
 
 @media all and (max-width: 360px){
@@ -883,5 +1052,17 @@
 
 	.form-section .radio-field li, .form-section .radio-field span.wpcf7-list-item{
 		padding: 0 0 0 10px;
+	}
+
+	.subscriber p{
+		font-size: 12px;
+	}
+
+	.subscriber h2{
+		font-size: 14px;
+	}
+
+	.tags-list a{
+		font-size: 12px;
 	}
 }

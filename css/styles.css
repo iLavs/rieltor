@@ -1781,7 +1781,7 @@ header .labels-list .category-label{
 }
 
 .single article section > strong{
-	display: block;
+	display: inline-block;
 	font:700 1.125em/1.5 roboto;
 	margin: 0 0 1.65em;
 	overflow: hidden;
