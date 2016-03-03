@@ -1145,11 +1145,12 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 
 .bred-crumbs > li:after{
 	content:">>";
-	margin: 0 10px;
+	margin: 0 6px 0 10px;
 	font-weight: 300;
 }
 
-.bred-crumbs > li a{
+.bred-crumbs > li a,
+.bred-crumbs > li span{
 	font: 500 0.875em Roboto;
 	color: #fff;
 }
