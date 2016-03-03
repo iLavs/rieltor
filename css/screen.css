@@ -604,6 +604,15 @@
 	.home .content > .helps{
 		padding-bottom: 30px;
 	}
+
+	.single article img {
+		max-width: none;
+		width: 100%;
+	}
+
+	.single article blockquote{
+		width: 100%;
+	}
 }
 
 
@@ -751,12 +760,30 @@
 }
 
 @media all and (max-width: 480px){
+	.page-template-page-blog article header{
+		margin: 0 0 20px;
+	}
+
+	.info-section ul{
+		float: none;
+		margin-bottom: 10px;
+	}
+
 	.page-template-page-blog article h2 a{
 		font-size: 24px;
 	}
 
-	.post > section p, .single article > section p{
+	.post > section p, .single article > section p,
+	.post > section p strong, .single article > section p strong{
 		font-size: 14px;
+	}
+
+
+	.pagination li:first-child a,
+	.pagination li:last-child a{
+		 width: 1px;
+		 padding: 0 2px;
+		overflow: hidden;
 	}
 }
 
@@ -815,7 +842,30 @@
 }
 
 @media all and (max-width: 400px){
+	ul.post-footer-info{
+		float: none;
+		width: 100%;
+		margin: 0 0 10px;
+		text-align: left;
+	}
 
+	.post > section p:last-child, .single article > section p:last-child{
+		margin: 0 0 20px;
+	}
+
+	.post-blockquote p{
+		font-size: 16px;
+	}
+}
+
+@media all and (max-width: 380px){
+	.post-blockquote p{
+		font-size: 14px;
+	}
+
+	.page-template-page-blog article h2 a{
+		font-size: 20px;
+	}
 }
 
 @media all and (max-width: 360px){

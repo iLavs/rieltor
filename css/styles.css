@@ -1770,6 +1770,10 @@ header .labels-list .category-label{
 	background-size: 35px;
 }
 
+.single article img{
+	max-width: 50%;
+}
+
 .single article blockquote p{
 	font-style: italic;
 	padding-left: 22px;
@@ -1816,8 +1820,9 @@ header .labels-list .category-label{
 
 .single .video-wrap img{
 	display: block;
-	width: 100%;
+	width: 100%!important;
 	margin: 0!important;
+	max-width: none;
 }
 
 .post-footer-info .fa,
