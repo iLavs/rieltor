@@ -329,6 +329,7 @@
 		text-align: left;
 		padding: 80px 20px 40px;
 		z-index: 2000;
+		overflow: auto;
 	}
 	
 	.main-nav a{
@@ -337,6 +338,13 @@
 
 	.main-nav .current-menu-item, .main-nav .current_page_item, .main-nav .current-menu-parent, .main-nav .current-menu-ancestor, .main-nav .current-page-ancestor, .main-nav li:hover{
 		background: transparent;
+	}
+
+	.main-nav li:hover:after, .main-nav .current-menu-item:after, .main-nav .current_page_item:after, .main-nav .current-menu-parent:after, .main-nav .current-menu-ancestor:after, .main-nav .current-page-ancestor:after{
+		-webkit-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
 	}
 
 	.main-nav.active{
@@ -634,6 +642,18 @@
 }
 
 @media all and (max-width: 440px){
+	.header .navbar{
+		padding: 0 20px; 
+	}
+
+	.burger{
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		width: 52px;
+		z-index: 10000;
+	}
+
 	.home .content h2{
 		font-size: 30px;
 	}

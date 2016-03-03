@@ -33,8 +33,17 @@ $(document).ready(function() {
         equalheight('.content-wrap .content, .content-wrap .sidebar');
     });
 
+  if($(window).width() < 900){
+    $('.backdrop').prependTo('body');
+  }
+
   $('.burger').click(function(event) {
-      $('.main-nav').toggleClass('active');
+      $('.main-nav, .backdrop').toggleClass('active');
+  });
+
+
+  $('.backdrop').click(function(event) {
+      $('.main-nav, .backdrop').toggleClass('active');
   });
 
   $('.owl-carousel').owlCarousel({
