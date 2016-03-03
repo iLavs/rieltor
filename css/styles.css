@@ -1220,16 +1220,19 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 	padding-top: 6.875em;
 }
 
-.page-template-page-blog article h2{
+.page-template-page-blog article h2,
+.archive article h2{
 	margin: 0 0 18px;
 }
 
-.page-template-page-blog article h2 a{
+.page-template-page-blog article h2 a,
+.archive article h2 a{
 	font: 2.1875em Roboto;
 	color: #000;
 }
 
-.page-template-page-blog article header{
+.page-template-page-blog article header,
+.archive article header{
 	margin: 0 0 2.625em;
 }
 
