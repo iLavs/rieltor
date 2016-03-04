@@ -49,14 +49,14 @@ $(document).ready(function() {
   });
 
   $('.owl-carousel').owlCarousel({
-      autoPlay: true,
-      navigation : false, // Show next and prev buttons
-      slideSpeed : 1500,
-      paginationSpeed : 1400,
-      rewindSpeed: 2000,
-      pagination: true,
-      singleItem:true
-    });
+    autoPlay: true,
+    navigation : false, // Show next and prev buttons
+    slideSpeed : 1500,
+    paginationSpeed : 1400,
+    rewindSpeed: 2000,
+    pagination: true,
+    singleItem:true
+  });
 
   $(function() {
     $('a.anchor-link').bind('click', function(event) {
@@ -66,7 +66,6 @@ $(document).ready(function() {
       }, 1250);
       event.preventDefault();
     });
-
   });
 
 });

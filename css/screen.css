@@ -58,7 +58,9 @@
 	}
 
 	.post-blockquote p:before,
-	.post-blockquote p:after{
+	.post-blockquote p:after,
+    .post .post-blockquote p:before,
+    .post .post-blockquote p:after{
 		width: 40px;
 	}
 
@@ -108,7 +110,9 @@
 	}
 
 	.post-blockquote p:before,
-	.post-blockquote p:after{
+	.post-blockquote p:after,
+    .post .post-blockquote p:before,
+    .post .post-blockquote p:after{
 		width: 35px;
 	}
 
@@ -146,7 +150,8 @@
 		overflow: hidden;
 	}
 
-	header .labels-list a{
+	header .labels-list a,
+    header .labels-list span{
 		font-size: 12px;
 	}
 
@@ -250,7 +255,8 @@
 		font-size: 12px;
 	}
 
-	.post-blockquote p{
+	.post-blockquote p,
+    .post .post-blockquote p{
 		font-size: 20px;
 	}
 
@@ -258,7 +264,10 @@
 		padding: 1.875em 1.5em 1.675em;
 	}
 
-	.post-blockquote p:before, .post-blockquote p:after{
+	.post-blockquote p:before,
+    .post-blockquote p:after,
+    .post .post-blockquote p:before,
+    .post .post-blockquote p:after{
 		width: 27px;
 	}
 }
@@ -752,7 +761,9 @@
 		margin: 0;
 	}
 
-	.pagination li{
+	.pagination li,
+    .wp-pagenavi a,
+    .wp-pagenavi span{
 		margin: 0 5px;
 	}
 
@@ -793,12 +804,16 @@
 		width: 100%;
 	}
 
-	.post-blockquote p{
+	.post-blockquote p,
+    .post .post-blockquote p{
 		font-size: 18px;
 		line-height: 1.5;
 	}
 
-	.post-blockquote p:before, .post-blockquote p:after{
+	.post-blockquote p:before,
+    .post-blockquote p:after,
+    .post .post-blockquote p:before,
+    .post .post-blockquote p:after{
 	    width: 20px;
     	height: 20px;
 	}
@@ -882,9 +897,13 @@
 	}
 
 	.foot-nav > ul > li,
-	.foot-nav > ul > li:last-child> ul >li{
+	.foot-nav > ul > li:last-child > ul > li{
 		width: 100%;
 	}
+
+    .foot-nav > ul > li {
+        margin-bottom: 1em;
+    }
 
 	.form-section .btn{
 		font-size: 16px;
@@ -928,10 +947,14 @@
 		width: 100%;
 	}
 
+    .wp-pagenavi {
+        margin: -0.8em 0 6em;
+    }
 	.pagination li:first-child a,
-	.pagination li:last-child a{
-		 width: 1px;
-		 padding: 0 2px;
+	.pagination li:last-child a,
+    .wp-pagenavi a.previouspostslink,
+    .wp-pagenavi a.nextpostslink{
+        font-size: 0;
 		overflow: hidden;
 	}
 
@@ -1022,13 +1045,15 @@
 		margin: 0 0 20px;
 	}
 
-	.post-blockquote p{
+	.post-blockquote p,
+    .post .post-blockquote p{
 		font-size: 16px;
 	}
 }
 
 @media all and (max-width: 380px){
-	.post-blockquote p{
+	.post-blockquote p,
+    .post .post-blockquote p{
 		font-size: 14px;
 	}
 
