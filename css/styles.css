@@ -56,7 +56,8 @@ button 						   { border: none; }
 }
 
 .btn,
-.es_textbox_button{
+.es_textbox_button,
+.comment-box #wpcomm .wc-field-submit input[type="button"]{
 	display: inline-block;
 	font:900 1.125em Roboto ;
 	padding: 1.05em 2.1875em 1.09em 2.1875em;
@@ -256,6 +257,7 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 .main-nav .current-menu-parent,
 .main-nav .current-menu-ancestor,
 .main-nav .current-page-ancestor,
+.single-post .main-nav .menu-item-39,
 .main-nav li:hover{
 	background: #f2b41a;
 }
@@ -286,7 +288,8 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 .main-nav .current_page_item:after,
 .main-nav .current-menu-parent:after,
 .main-nav .current-menu-ancestor:after,
-.main-nav .current-page-ancestor:after{
+.main-nav .current-page-ancestor:after,
+.single-post .main-nav .menu-item-39:after{
 	width: 100%;
 	-webkit-transform: scalex(1);
 	-ms-transform: scalex(1);
@@ -298,7 +301,8 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 .main-nav .current_page_item a,
 .main-nav .current-menu-parent a,
 .main-nav .current-menu-ancestor a,
-.main-nav .current-page-ancestor a {
+.main-nav .current-page-ancestor a,
+.single-post .main-nav .menu-item-39 a {
 	color: #000;
 }
 
@@ -1118,6 +1122,7 @@ input[type="radio"]:checked + .wpcf7-list-item-label:before{
 .foot-nav .current-menu-parent > a,
 .foot-nav .current-menu-ancestor > a,
 .foot-nav .current-page-ancestor > a,
+.single-post .foot-nav .menu-item-44 > a,
 .footer .foot-nav .sub-menu .sub-menu li:hover:before,
 .footer .foot-nav .sub-menu .sub-menu .current-menu-item:before,
 .footer .foot-nav .sub-menu .sub-menu .current_page_item:before,
@@ -1458,6 +1463,165 @@ header .labels-list .category-label{
 	color:#fcbe25;
 }
 
+
+/* COMMENTS SECTION */
+.post-blockquote + .comment-box {
+    padding-top: 1em;
+}
+.comment-box header {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.comment-box header:before,
+.comment-box header:after {
+    content: '';
+    position: absolute;
+    top: 19px;
+    right: 0;
+}
+.comment-box header:before {
+    width: 100%;
+    height: 1px;
+    background: #e1e1e1;
+}
+.comment-box header:after {
+    top: 14px;
+    width: 9px;
+    height: 9px;
+    border: 1px solid #e1e1e1;
+    border-radius: 50%;
+    background: #fff;
+}
+.comment-box header h3 {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    background: #fff;
+    padding-right: 0.3em;
+    font: 300 1.875em Roboto;
+    color: #000;
+}
+.comment-box header h3 span {
+    font-size: 0.6em;
+    position: relative;
+    top: -4px;
+}
+.comment-box #wc_show_hide_loggedin_username {
+    font-size: inherit;
+}
+.comment-box #wpcomm,
+.comment-box #wc_show_hide_loggedin_username {
+    max-width: none;
+    border: none;
+}
+.comment-box #wpcomm .wc-form-wrapper {
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+.comment-box #wpcomm .wpdiscuz-textarea-wrap {
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+}
+.comment-box #wpcomm .wc-field-comment .wc-field-textarea,
+.comment-box #wpcomm .wc-comment .wc-comment-right {
+    margin-left: 94px;
+}
+.comment-box #wpcomm .wc-field-comment .wc-field-textarea textarea {
+    padding: 12px 15px;
+    font-size: 1em;
+    font-style: normal;
+    min-height: 157px !important;
+    border-radius: 4px;
+    box-shadow: none;
+}
+.comment-box #wpcomm .wc-form-submit {
+    padding: 0;
+}
+.comment-box #wpcomm .wc-field-submit {
+    padding: 1.25em 0 0.6em;
+}
+.comment-box #wpcomm .wc-field-submit input[type="button"] {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+}
+.comment-box #wpcomm .wc-field-submit input[type="button"]:hover {
+    color: #000;
+}
+.comment-box .wpdiscuz-front-actions {
+    background: none;
+    border: none;
+}
+.comment-box #wpcomm .wc-reply {
+    margin-top: 3em;
+    margin-left: 4em;
+}
+.comment-box #wpcomm .wc-comment {
+    margin-bottom: 3em;
+}
+.comment-box #wpcomm .wc-comment .wc-comment-left {
+    width: 84px;
+}
+.comment-box #wpcomm .wc-comment .wc-comment-right {
+    overflow: hidden;
+    border: none;
+    background: transparent;
+    padding-top: 0;
+}
+.comment-box #wpcomm .wc-comment-header {
+    clear: both;
+    margin-bottom: 1em;
+}
+.comment-box #wpcomm .wc-blog-guest > .wc-comment-right .wc-comment-author,
+.comment-box #wpcomm .wc-blog-post_author > .wc-comment-right .wc-comment-author a {
+    color: #000;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+.comment-box #wpcomm .wc-comment-text {
+    clear: both;
+}
+.comment-box #wpcomm .wc-comment-text p {
+    margin-bottom: 1em;
+    font-size: 1em;
+    line-height: 1.5;
+}
+.comment-box #wpcomm .wc-comment-footer {
+    margin: 0;
+    padding-top: 1em;
+    border-top: 1px solid #e1e1e1;
+}
+.comment-box #wpcomm .wc-comment-footer .wc-vote-result {
+    background: transparent;
+    color: #666;
+    padding: 0;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.comment-box #wpcomm .wc-reply-link,
+.comment-box #wpcomm .wc-vote-link,
+.comment-box #wpcomm .wc-share-link,
+.comment-box #wpcomm .wc-comment-footer span.wc_editable_comment{
+    font-weight: 400;
+}
+.comment-box #wpcomm .avatar {
+    border: none;
+    padding: 0;
+    width: 84px;
+    border-radius: 4px;
+}
+.comment-box #wpcomm hr {
+    background-color: transparent;
+    height: 0;
+}
+.comment-box #wpcomm .by-wpdiscuz {
+    display: none;
+}
+
+
 /*pagination*/
 
 .pagination li,
@@ -1762,7 +1926,8 @@ header .labels-list .category-label{
 	text-transform: uppercase;
 }
 
-.subscriber .es_textbox_button {
+.subscriber .es_textbox_button,
+.comment-box #wpcomm .wc-field-submit input[type="button"] {
     background: rgba(255,210,101,1);
     background: -moz-linear-gradient(top, rgba(255,210,101,1) 0%, rgba(242,152,26,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,210,101,1)), color-stop(100%, rgba(242,152,26,1)));
@@ -1772,6 +1937,7 @@ header .labels-list .category-label{
     background: linear-gradient(to bottom, rgba(255,210,101,1) 0%, rgba(242,152,26,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd265', endColorstr='#f2981a', GradientType=0 );
     border: none;
+    box-shadow: none;
     cursor: pointer;
 }
 
