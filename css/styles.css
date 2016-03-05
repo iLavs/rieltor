@@ -1260,7 +1260,7 @@ header .labels-list {
 }
 header .labels-list > li{
 	float: left;
-    margin-right: 0;
+    margin-right: 1px;
 }
 
 header .labels-list a,
@@ -1357,6 +1357,14 @@ header .labels-list .category-label{
 .post-footer-info li{
 	display: inline-block;
 	margin: 0 0 0 1em; 
+}
+
+.addtoany_shortcode {
+    display: inline;
+}
+
+.addtoany_shortcode .addtoany_list a {
+    font-size: inherit;
 }
 
 .post blockquote{
@@ -1771,6 +1779,18 @@ header .labels-list .category-label{
     display: none;
 }
 
+.subscriber .es_msg {
+    margin-top: -10px;
+}
+
+.subscriber .es_textbox,
+.subscriber .es_button {
+    padding: 0;
+}
+.subscriber .es_button {
+    padding-bottom: 10px;
+}
+
 .subscriber form{
 	margin: 0 0 10px;
 }
@@ -1794,8 +1814,12 @@ header .labels-list .category-label{
 
 .follower-stat .name{
 	position: relative;
-	font:500 1.25em roboto;
 	padding-left: 32px;
+}
+
+.follower-stat .name a{
+    font:500 1.25em roboto;
+    color: rgba(0,0,0, .8);
 }
 
 .follower-stat .statistics{
@@ -1842,6 +1866,11 @@ header .labels-list .category-label{
 	background-position: -5px -71px;
 	width: 16px;
 	height: 17px;
+}
+
+.follower-stat .fa-instagram{
+    background-image: none;
+    color: #6E4B3D;
 }
 
 /*SINGLE*/

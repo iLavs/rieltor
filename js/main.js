@@ -68,4 +68,7 @@ $(document).ready(function() {
     });
   });
 
+    $('#es_txt_email_pg').attr('placeholder', 'Enter Your Email Id');
+    $("#es_txt_button_pg").val("Get Updates");
+
 });
