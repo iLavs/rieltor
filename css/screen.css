@@ -74,6 +74,12 @@
     }
 }
 
+@media all and (min-width: 1381px) and (max-width: 1540px) {
+    .form-section .radio-field {
+        width: 85%;
+    }
+}
+
 @media all and (max-width: 1380px){
 	body, a{
 		font-size: 14px;
@@ -111,6 +117,7 @@
 
 	.form-section .radio-field{
 		width: 80%;
+        min-width: 266px;
 	}
 
 	.post-blockquote p:before,
@@ -157,6 +164,10 @@
 	.content-wrap .content{
 		width: calc(100% - 352px);
 	}
+
+    .form-section .radio-field {
+        width: 100%;
+    }
 
 	.recent-posts-list .thumb{
 		width: 30%;
