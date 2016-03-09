@@ -953,7 +953,7 @@
 
 	.form-section .radio-field{
 		width: 100%;
-        min-width: 266px;
+        min-width: auto;
 	}
 	
 	.intro-banner .excerpt{
