@@ -643,10 +643,14 @@
 
 	.clients-logo ul{
 		overflow: hidden;
+        height: auto;
+        border-bottom: none;
 	}
 
 	.clients-logo li{
-		width: 25%;
+        width: 33.33%;
+        height: 12.5em;
+        border-bottom: 1px solid #eaeaea;
 	}
 
 	.intro-banner .excerpt{
@@ -949,6 +953,7 @@
 
 	.form-section .radio-field{
 		width: 100%;
+        min-width: 266px;
 	}
 	
 	.intro-banner .excerpt{
